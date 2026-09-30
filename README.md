@@ -1,7 +1,7 @@
 # P06 — Yangpu Public Service Assessment and Spatial Decision Support
 
 ## Status
-P06-05: Data Acquisition & Preparation — v0.8 (approved subdistrict geometry + project GeoPackage)
+P06-05: Data Acquisition & Preparation — v0.9 (conservative facility spatialisation pass)
 
 ## Project type
 Independent portfolio project simulating a Chinese GIS/planning horizontal-project workflow.
@@ -46,3 +46,5 @@ The first authoritative facility layer has been acquired: the official Yangpu di
 - Operational geometry: all 12 current Yangpu subdistrict polygons extracted from the 2026-09-28 Geofabrik Shanghai OSM snapshot.
 - Boundary topology and district-union QA passed.
 - `p06_yangpu.gpkg` now contains approved subdistrict boundaries, the census-baseline population polygon layer, and district context geometry.
+
+- Facility spatialisation has begun using reproducible OSM feature matching and subdistrict consistency checks; unresolved official facilities remain unlocated rather than receiving guessed coordinates.
