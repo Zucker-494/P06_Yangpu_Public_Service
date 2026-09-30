@@ -1,7 +1,7 @@
 # P06 — Yangpu Public Service Assessment and Spatial Decision Support
 
 ## Status
-P06-05: Data Acquisition & Preparation — v0.6 (demand baseline + authoritative administrative reference)
+P06-05: Data Acquisition & Preparation — v0.7 (spatialisation pipeline and boundary QA implemented)
 
 ## Project type
 Independent portfolio project simulating a Chinese GIS/planning horizontal-project workflow.
@@ -38,3 +38,7 @@ The first authoritative facility layer has been acquired: the official Yangpu di
 - Temporal control: 2024 district resident population (1,199,700) retained without synthetic street-level redistribution.
 - Administrative reference: current 12-subdistrict names and codes frozen from Shanghai Civil Affairs.
 - Boundary geometry remains provenance-controlled and must pass QA before final spatial joins.
+
+- Spatialisation pipeline now separates authoritative administrative semantics from operational geometry provenance.
+- Added time-aware official area QA references and fail-loud boundary acquisition/QA scripts.
+- No polygon or GeoPackage is falsely claimed as complete: spatial database construction is gated by boundary QA.

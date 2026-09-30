@@ -25,3 +25,11 @@ Therefore:
 
 ## Analysis rule
 No facility-to-subdistrict spatial join or accessibility aggregation is final until the boundary layer passes this QA.
+
+## v0.7 implementation note
+Geofabrik currently publishes regularly updated Shanghai OSM extracts in GeoPackage, Shapefile and PBF formats. Automated large-file retrieval was attempted in the project execution environment but did not complete successfully. No geometry file is therefore claimed as acquired in v0.7.
+
+The repository now contains a fail-loud acquisition entry point (`src/00_acquire_boundary.py`) and QA script (`src/00_boundary_qa.py`). This preserves reproducibility without inventing a successful download.
+
+### Temporal area QA
+Area reference values carry a reference year. A historical complete table is retained for coverage, while newer official subdistrict values replace historical values where individually verified. Area mismatch is therefore treated as a reconciliation signal, not an automatic geometry failure.
