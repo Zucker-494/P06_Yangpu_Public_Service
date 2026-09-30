@@ -1,0 +1,9 @@
+﻿dataset,priority,preferred_source,minimum_requirement,status,notes
+population_subdistrict,Mandatory,Authoritative district/municipal statistics,Latest official resident population by subdistrict,Pending,Do not substitute migrant population for total resident population
+boundary_subdistrict,Mandatory,Authoritative boundary data / validated project data,12 Yangpu subdistrict polygons,Pending,Geometry source to be validated
+facility_healthcare,Mandatory,Yangpu District Health Commission,Community health centres / relevant primary healthcare facilities,Identified,Official district source identified
+facility_elderlycare,Mandatory,Shanghai Open Data Platform / Civil Affairs,Elderly-care institutions and available capacity fields,Identified,Open-data products identified
+facility_culture,Preferred,Shanghai/Yangpu culture authorities,Community cultural facilities,To acquire,Use authoritative list where possible
+facility_sports,Preferred,Shanghai/Yangpu sports authorities,Public sports facilities,To acquire,Official/open data preferred
+facility_park,Mandatory,Yangpu landscaping authority,"Park name, area, type, subdistrict, address",Identified,Official park list provides useful capacity/area attributes
+network_pedestrian,Mandatory,OpenStreetMap,Pedestrian network,Available,Used for network accessibility
