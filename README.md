@@ -1,7 +1,7 @@
 # P06 — Yangpu Public Service Assessment and Spatial Decision Support
 
 ## Status
-P06-05: Data Acquisition & Preparation — v0.4 (parks + elderly care + primary healthcare core layer)
+P06-05: Data Acquisition & Preparation — v0.5 (five-service facility framework established)
 
 ## Project type
 Independent portfolio project simulating a Chinese GIS/planning horizontal-project workflow.
@@ -29,3 +29,7 @@ The first authoritative facility layer has been acquired: the official Yangpu di
 
 - Healthcare core layer: all 12 community health service centres consolidated from official Yangpu sources.
 - The officially confirmed 66 service stations are retained as a separate pending secondary layer to avoid mixing facility tiers or inconsistent source years.
+
+- Culture: all 12 subdistrict community cultural-centre institutions confirmed; unresolved address/version issues are explicitly flagged.
+- Sports: 20 high-confidence public/community sports-facility records added with facility-tier semantics.
+- Visual acceptance requirements are now formally recorded in `docs/visual_specification.md`.

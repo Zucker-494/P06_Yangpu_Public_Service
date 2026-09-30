@@ -42,3 +42,19 @@ The original subdistrict label is retained in `subdistrict_raw`. A separate `sub
 - The 66-station secondary layer is not yet populated because a complete, same-period official station-name/address inventory has not been consolidated.
 - Licensed bed capacity is populated only where a specific official source supports it; capacity reference dates are retained because values are not all from the same year.
 - No coordinates have been fabricated from postal addresses. Geocoding remains a separate auditable step.
+
+
+## v0.5 — Culture and sports layers
+### Culture
+- Confirmed the institutional network of 12 subdistrict community cultural activity centres.
+- The 2024 municipal evaluation identified 4 Yangpu centres as demonstration centres and the other 8 as grade-1 centres.
+- Address values are populated only when individually supported by official district material.
+- Multiple official addresses for some centres are treated as a reconciliation issue (main centre / branch / relocation), not silently collapsed into one location.
+
+### Sports
+- Added 20 high-confidence public/community sports-facility records from official Yangpu public-opening information.
+- Facility tiers are retained (`public_sports_venue`, `community_fitness_centre`, `community_fitness_station`, `public_ball_court`) so later supply analysis does not count unlike facilities as equivalent.
+- Co-located culture/sports services are retained as legitimate multi-service sites rather than deduplicated away.
+
+### Visualization acceptance condition
+Final cartography must use deliberate visual hierarchy, high-contrast continuous ramps where appropriate, designed point size/stroke/transparency, subdued contextual layers, readable legends/labels at README or paper-column scale, and analytically distinct map purposes. A Neighborhood × Service Gap Heatmap remains a required non-map analytical output.
