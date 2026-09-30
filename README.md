@@ -76,3 +76,11 @@ The first authoritative facility layer has been acquired: the official Yangpu di
 - Added address-based facility geocoding candidates from Baidu Web Service without storing the API key.
 - Converted BD-09 results to WGS84 and checked Yangpu containment, subdistrict consistency, precision, confidence, result level, and coordinate clustering.
 - Created an auditable A/B/C geometry-confidence layer and category-level accessibility-readiness table.
+
+
+### v1.3.3 geometry QA revision
+- Corrected the geocoder QA rule so Baidu `level` is diagnostic metadata rather than an arbitrary whitelist.
+- Retained strict `precise=1`, confidence, Yangpu-containment and known-subdistrict consistency checks.
+- Added independent named-OSM corroboration for three facilities.
+- Enriched four previously missing community-culture addresses from Yangpu Government sources.
+- Rebuilt the accessibility-ready facility layer from the audited hybrid-evidence rule.

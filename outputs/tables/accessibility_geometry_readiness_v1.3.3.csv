@@ -1,0 +1,6 @@
+﻿facility_type,total,A,B,C,A_coverage_pct,gate_80_status
+culture,12,10,0,2,83.3,ready
+elderly_care,65,61,3,1,93.8,ready
+healthcare,12,12,0,0,100.0,ready
+park,22,17,0,5,77.3,not_ready
+sports,20,18,1,1,90.0,ready
