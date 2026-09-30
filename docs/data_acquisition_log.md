@@ -24,3 +24,12 @@ The original subdistrict label is retained in `subdistrict_raw`. A separate `sub
 3. Keep source labels and standardised labels in separate fields.
 4. Do not geocode an address silently; geocoding provenance must be recorded.
 5. OSM may supplement spatial geometry/road networks, but must not silently replace authoritative facility inventories.
+
+
+## v0.3 — Elderly-care layer
+- Added the complete 2024 Yangpu District Civil Affairs Bureau inventory: 65 records.
+- Contact numbers were intentionally excluded because they are unnecessary for spatial analysis.
+- Added a verified extract of 40 planning-capacity records from the official elderly-care facilities layout plan.
+- Capacity is explicitly stored as `planned_2025`; it is not treated as observed/licensed 2024 capacity.
+- Exact-name matching is used for the first reconciliation pass. Fuzzy/manual matching is deferred to avoid false entity matches.
+- Planning documents report 61 institutional facilities and 11,110 planned beds by 2025; this planning universe is not assumed to be identical to the 65-record 2024 operating/service inventory.
