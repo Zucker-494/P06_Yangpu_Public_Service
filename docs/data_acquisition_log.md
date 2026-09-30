@@ -58,3 +58,11 @@ The original subdistrict label is retained in `subdistrict_raw`. A separate `sub
 
 ### Visualization acceptance condition
 Final cartography must use deliberate visual hierarchy, high-contrast continuous ramps where appropriate, designed point size/stroke/transparency, subdued contextual layers, readable legends/labels at README or paper-column scale, and analytically distinct map purposes. A Neighborhood × Service Gap Heatmap remains a required non-map analytical output.
+
+
+## v0.6 — Population demand baseline and administrative reference
+- Added authoritative administrative codes/names for all 12 Yangpu subdistricts.
+- Added complete Seventh Census (2020) resident population for all 12 subdistricts; sum = 1,242,600.
+- Added the 2024 Yangpu district resident-population total (1,199,700) as a temporal control.
+- The 2024 district total is explicitly prohibited from proportional redistribution to subdistricts.
+- A boundary provenance/QA protocol has been added. Official administrative semantics are separated from operational polygon geometry provenance.

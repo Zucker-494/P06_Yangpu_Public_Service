@@ -1,7 +1,7 @@
 # P06 — Yangpu Public Service Assessment and Spatial Decision Support
 
 ## Status
-P06-05: Data Acquisition & Preparation — v0.5 (five-service facility framework established)
+P06-05: Data Acquisition & Preparation — v0.6 (demand baseline + authoritative administrative reference)
 
 ## Project type
 Independent portfolio project simulating a Chinese GIS/planning horizontal-project workflow.
@@ -33,3 +33,8 @@ The first authoritative facility layer has been acquired: the official Yangpu di
 - Culture: all 12 subdistrict community cultural-centre institutions confirmed; unresolved address/version issues are explicitly flagged.
 - Sports: 20 high-confidence public/community sports-facility records added with facility-tier semantics.
 - Visual acceptance requirements are now formally recorded in `docs/visual_specification.md`.
+
+- Demand baseline: complete authoritative 2020 Census resident population for all 12 subdistricts (1,242,600 residents).
+- Temporal control: 2024 district resident population (1,199,700) retained without synthetic street-level redistribution.
+- Administrative reference: current 12-subdistrict names and codes frozen from Shanghai Civil Affairs.
+- Boundary geometry remains provenance-controlled and must pass QA before final spatial joins.

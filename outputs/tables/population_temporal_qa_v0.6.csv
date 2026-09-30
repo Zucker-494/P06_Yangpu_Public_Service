@@ -1,0 +1,6 @@
+﻿metric,value,unit,interpretation
+subdistrict_count,12.0,count,expected 12
+census_2020_subdistrict_sum,1242600.0,persons,authoritative street-level baseline
+district_resident_population_2024,1199700.0,persons,district-level control only
+absolute_change_2020_to_2024,-42900.0,persons,not spatially allocated
+relative_change_2020_to_2024,-3.4524384355383853,percent,district-level temporal change only

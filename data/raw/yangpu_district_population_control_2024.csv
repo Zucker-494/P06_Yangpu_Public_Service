@@ -1,0 +1,2 @@
+﻿district_id,district_name,population_total,population_type,reference_year,source,role,allocation_rule
+310110,杨浦区,1199700,resident_population,2024,Yangpu Statistical Yearbook 2025 / official district statistics,district_level_temporal_control_only,DO_NOT_proportionally_allocate_to_subdistricts_without_evidence
