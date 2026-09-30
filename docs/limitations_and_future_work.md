@@ -34,3 +34,7 @@ The first visual-evidence audit confirmed that not every available supply indica
 
 ## v1.3 network status
 A pedestrian-network candidate has been extracted from the 2026-09-29 OSM PBF snapshot with a 1 km routing buffer. Network QA is now implemented. However, facility geometry—not network availability—is the principal constraint on category-wide accessibility analysis. An explicit 80% A-grade geometry gate is used internally to prevent incomplete facility sets from producing misleading service-area results.
+
+
+## v1.3.1 topology note
+The v1.3 endpoint-only graph substantially under-connected the pedestrian network because source line intersections were not necessarily represented as line endpoints. v1.3.1 applies planar noding to recover geometric junctions. This fixes the dominant under-connection problem, but introduces a smaller opposite risk: grade-separated bridge/tunnel crossings may be connected geometrically if vertical/topological OSM tags are not preserved through noding. Final routing should therefore retain or reconstruct OSM grade-separation semantics where material.

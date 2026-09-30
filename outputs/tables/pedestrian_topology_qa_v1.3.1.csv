@@ -1,0 +1,9 @@
+﻿metric,value,unit,status
+noded_segments,16424.0,count,INFO
+graph_nodes,11706.0,count,INFO
+graph_edges,16291.0,count,INFO
+connected_components,80.0,count,INFO
+largest_component_node_share,0.9724927387664446,proportion,PASS
+largest_component_length_share,0.9881983416232555,proportion,PASS
+largest_component_length_km,1191.8225111049082,km,INFO
+total_graph_length_km,1206.0559716657401,km,INFO
