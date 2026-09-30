@@ -1,101 +1,138 @@
 # P06 — Yangpu Public Service Assessment and Spatial Decision Support
 
 ## Status
-P06-05: Data Acquisition & Preparation — v1.3.2 (facility geocoding and spatial QA)
+**P06-06: Final Analysis & Portfolio Delivery — v2.0**
+
+Core analytical workflow complete: multi-source data integration → structured spatial database → supply assessment → pedestrian-network accessibility → demand–supply gap diagnosis → intervention-oriented outputs → final cartographic delivery.
+
+Park accessibility remains an explicitly documented enhancement because parks require entrance-based rather than single-point accessibility modelling.
 
 ## Project type
-Independent portfolio project simulating a Chinese GIS/planning horizontal-project workflow.
+Independent portfolio project simulating a Chinese GIS/planning horizontal-project workflow.  
+**This is not a commissioned government project.**
 
 ## Study area
-Yangpu District, Shanghai. Primary reporting units: 12 subdistricts.
+Yangpu District, Shanghai, using the current 12 subdistricts as the primary reporting units.
 
-## Core question
-Where are public-service provision, accessibility, and demand–supply mismatches located, and what type of intervention should be prioritised?
+## Decision question
+**Where are public-service provision, accessibility, and demand–supply mismatches located, and what type of intervention should be prioritised?**
 
-## Current implementation
-Python / GeoPandas + GeoPackage + QGIS. No new software is required during the thesis-submission period.
+The project is designed around a planning workflow rather than a single GIS technique. It separates supply shortage from spatial-access problems so that the same map does not automatically imply the same intervention.
 
-## Workflow
-Raw data → standardisation → spatial integration → supply analysis → accessibility analysis → gap diagnosis → decision-support outputs.
+## Service categories
+- Healthcare
+- Elderly care
+- Culture
+- Sports
+- Parks / green space
 
-## Important
-This is a simulated consultancy workflow, not a commissioned project. Official/authoritative data are preferred. Missing client-type datasets remain explicit data requirements rather than being silently replaced by weak proxies.
+## Analytical framework
 
+### 1. Supply
+Facility inventories are standardized by service category and linked to the 2020 Census subdistrict population baseline. Core indicators include facilities per 10,000 residents and, for parks, park area per resident. Capacity is retained only where an authoritative source provides it; missing capacity is not imputed.
 
-## Data acquisition status
-The first authoritative facility layer has been acquired: the official Yangpu district park register (22 records). Additional official sources for elderly care, healthcare, culture and sports have been identified and are being consolidated before spatial analysis begins.
+### 2. Pedestrian accessibility
+The OSM pedestrian network was planar-noded and checked for connectivity before routing. Validated facilities are connected to the routing core using nearest-edge projection rather than nearest-node snapping.
 
-- Elderly-care layer: 65 official 2024 institution/service-home records added; planning capacity is maintained as a separate, typed source.
+Accessibility is reported as the share of modeled pedestrian-network length within 5, 10 and 15 minutes of the nearest facility. A baseline walking speed of 1.2 m/s is used.
 
-- Healthcare core layer: all 12 community health service centres consolidated from official Yangpu sources.
-- The officially confirmed 66 service stations are retained as a separate pending secondary layer to avoid mixing facility tiers or inconsistent source years.
+**This is network-length coverage, not population coverage.** Authoritative population is available only at subdistrict level, so the project does not fabricate fine-scale resident exposure.
 
-- Culture: all 12 subdistrict community cultural-centre institutions confirmed; unresolved address/version issues are explicitly flagged.
-- Sports: 20 high-confidence public/community sports-facility records added with facility-tier semantics.
-- Visual acceptance requirements are now formally recorded in `docs/visual_specification.md`.
+### 3. Demand–supply diagnosis
+Healthcare, elderly care, culture and sports are classified using a transparent 2×2 relative diagnostic:
 
-- Demand baseline: complete authoritative 2020 Census resident population for all 12 subdistricts (1,242,600 residents).
-- Temporal control: 2024 district resident population (1,199,700) retained without synthetic street-level redistribution.
-- Administrative reference: current 12-subdistrict names and codes frozen from Shanghai Civil Affairs.
-- Boundary geometry remains provenance-controlled and must pass QA before final spatial joins.
+| Supply | Accessibility | Diagnostic | Intervention interpretation |
+|---|---|---|---|
+| High | High | Broadly adequate | Maintain and monitor |
+| High | Low | Spatial configuration gap | Redistribute access points / spatially targeted provision |
+| Low | High | Supply/capacity pressure | Expand provision or capacity |
+| Low | Low | Combined gap | Combined supply and spatial intervention |
 
-- Spatialisation pipeline now separates authoritative administrative semantics from operational geometry provenance.
-- Added time-aware official area QA references and fail-loud boundary acquisition/QA scripts.
-- No polygon or GeoPackage is falsely claimed as complete: spatial database construction is gated by boundary QA.
+High/low is defined relative to the category-specific median across the 12 subdistricts. It is an exploratory district-relative diagnostic, **not a statutory planning standard**.
 
-- Operational geometry: all 12 current Yangpu subdistrict polygons extracted from the 2026-09-28 Geofabrik Shanghai OSM snapshot.
-- Boundary topology and district-union QA passed.
-- `p06_yangpu.gpkg` now contains approved subdistrict boundaries, the census-baseline population polygon layer, and district context geometry.
+### 4. Parks
+Park area per resident is retained as supply evidence. Joint park accessibility is deliberately marked pending because parks are areal destinations with potentially multiple entrances; treating one representative point as the access location would introduce avoidable error.
 
-- Facility spatialisation has begun using reproducible OSM feature matching and subdistrict consistency checks; unresolved official facilities remain unlocated rather than receiving guessed coordinates.
+## Key findings
 
-- `analysis_supply` is now implemented for parks, elderly care, healthcare, and culture using authoritative facility inventories and the frozen 2020 Census population baseline.
-- Facility geometry evidence is explicitly classified A/B/C; only A-grade points are eligible for future network accessibility analysis.
-- Sports street-level supply and all accessibility indicators remain deferred rather than being estimated from incomplete coordinates.
+Across the four categories with joint supply–accessibility diagnosis, 16 subdistrict × service cells are classified as combined gaps.
 
-- Added a formal limitations/future-work register linking each data constraint to its analytical consequence, mitigation, and upgrade path.
-- Added an indicator interpretation registry so temporal scope, readiness, and inferential limits travel with the analysis.
-- Added transparent district-relative supply diagnostics. Median-based labels are exploratory screening only and are not interpreted as official adequacy standards.
-- Final service-gap classification remains pending accessibility evidence.
+The strongest multi-service concentrations occur in:
+- **五角场街道:** combined gaps in 4 service categories
+- **长海路街道:** 4
+- **大桥街道:** 3
+- **殷行街道:** 2
 
-- Audited which supply indicators genuinely warrant maps versus charts/tables.
-- Selected park area per resident and elderly-care facilities per 10,000 residents as primary supply-map candidates.
-- Kept healthcare and culture rates as supporting evidence because their variation is dominated by the one-centre-per-subdistrict structure.
-- Added a preliminary contrast chart and a formal visual-evidence selection registry.
+These counts are descriptive overlap evidence rather than an overall ranking of subdistrict quality.
 
-- Extracted a Yangpu pedestrian-network candidate from the 2026-09-29 OSM PBF with a 1 km boundary buffer.
-- Added network QA and explicit pedestrian filtering rules.
-- Added a conservative 80% A-grade facility-geometry gate for category-wide accessibility modelling.
-- Accessibility remains intentionally deferred because facility-location completeness, rather than network availability, is currently the binding constraint.
+Healthcare and culture require particular interpretive care: the authoritative core inventory contains one principal centre per subdistrict, so differences in facilities per 10,000 residents are driven largely by population denominators rather than centre counts.
 
-- Reconstructed pedestrian topology by noding linework at geometric intersections.
-- Added full noded and largest-component routing-core layers.
-- Connectivity QA now evaluates both node share and network-length share.
-- Planar noding's potential to over-connect grade-separated crossings is explicitly retained as a routing limitation.
+## Final outputs
 
-- Added address-based facility geocoding candidates from Baidu Web Service without storing the API key.
-- Converted BD-09 results to WGS84 and checked Yangpu containment, subdistrict consistency, precision, confidence, result level, and coordinate clustering.
-- Created an auditable A/B/C geometry-confidence layer and category-level accessibility-readiness table.
+### Maps
+1. `outputs/maps/01_supply_pattern.png` — supply pattern
+2. `outputs/maps/02_healthcare_accessibility.png` — 15-minute healthcare network accessibility
+3. `outputs/maps/03_combined_gap_burden.png` — multi-service combined-gap burden
+4. `outputs/maps/04_intervention_diagnostic.png` — dominant intervention diagnostic
 
+### Charts
+- `outputs/charts/service_gap_heatmap_final.png` — required 12 × 5 Neighborhood × Service Gap diagnostic matrix
+- `outputs/charts/accessibility_profile_final.png` — service-category accessibility profiles
 
-### v1.3.3 geometry QA revision
-- Corrected the geocoder QA rule so Baidu `level` is diagnostic metadata rather than an arbitrary whitelist.
-- Retained strict `precise=1`, confidence, Yangpu-containment and known-subdistrict consistency checks.
-- Added independent named-OSM corroboration for three facilities.
-- Enriched four previously missing community-culture addresses from Yangpu Government sources.
-- Rebuilt the accessibility-ready facility layer from the audited hybrid-evidence rule.
+### Core audit tables
+- `outputs/tables/service_gap_diagnosis_v1.5.csv`
+- `outputs/tables/network_accessibility_by_subdistrict_v1.4.csv`
+- `outputs/tables/facility_geometry_qa_v1.3.3.csv`
+- `outputs/tables/combined_gap_burden_v1.5.csv`
 
+## Spatial database
+`p06_yangpu.gpkg` contains the project’s principal source, QA and analytical layers, including:
+- `boundary_subdistrict`
+- `population_subdistrict`
+- facility layers
+- `network_pedestrian_routing_core`
+- `facility_accessibility_ready`
+- `facility_network_snapped`
+- `analysis_supply`
+- `analysis_accessibility`
+- `analysis_gap`
+- `analysis_priority`
 
-### v1.4 network accessibility
-- Connected validated facilities to the pedestrian routing core using nearest-edge projection rather than nearest-node snapping.
-- Added facility-to-network snap QA and excluded >60 m connections from service-area calculation.
-- Calculated 5/10/15-minute pedestrian-network coverage by subdistrict for healthcare, elderly care, culture and sports.
-- Explicitly distinguishes network-length coverage from population coverage because only subdistrict-level authoritative population is available.
+## Data and provenance principles
+- Prefer authoritative/open sources.
+- Preserve source date and provenance.
+- Keep unknown capacity as null.
+- Do not redistribute the 2024 district population total synthetically to subdistricts.
+- Use the authoritative 2020 Census as the transparent subdistrict demand baseline.
+- Separate authoritative administrative semantics from operational OSM geometry.
+- Treat geocoded coordinates as derived spatial data rather than survey-grade positions.
+- Keep unresolved client-type data requirements explicit.
 
+## Reproducibility and QA
+The project separates data preparation, supply analysis, accessibility, gap diagnosis and visualization into modular scripts and auditable outputs. Major QA checks include:
+- 12-subdistrict boundary topology and district-union checks
+- pedestrian-network connectivity checks
+- facility geocoding A/B/C evidence
+- district containment and subdistrict consistency
+- facility-to-network snap distance
+- diagnostic-cell completeness
+- GeoPackage round-trip verification
 
-### v1.5 demand–supply gap diagnosis
-- Combined category-specific supply evidence with 15-minute pedestrian-network coverage using a transparent 2×2 diagnostic.
-- Distinguished broadly adequate, spatial-configuration gap, supply/capacity pressure, and combined-gap conditions.
-- Kept parks explicitly accessibility-pending rather than forcing point-based park accessibility.
-- Added the required 12-subdistrict × 5-service diagnostic heatmap and cell-level audit table.
-- Added intervention-type outputs without an arbitrary weighted composite ranking.
+See `docs/` for the detailed methodology, limitations, engineering backlog, visual specification and version-specific QA notes.
+
+## Important limitations
+1. Subdistrict polygons are operational OSM geometry rather than an official cadastral/administrative polygon dataset.
+2. The 2020 Census is the most defensible complete subdistrict population baseline currently available; the 2024 district total is contextual only.
+3. Facility geocoding is derived from authoritative addresses and independently QA-checked, but is not survey-grade positioning.
+4. Planar network noding can over-connect some grade-separated crossings if bridge/tunnel semantics are incomplete.
+5. Accessibility is network-length coverage rather than population coverage.
+6. Park accessibility requires entrance-based modelling and is therefore not forced into the current joint diagnostic.
+7. Median-based high/low classes describe relative conditions within Yangpu; they do not establish absolute service adequacy.
+
+## Technology
+Python · GeoPandas · pandas · NetworkX · Shapely · GeoPackage · QGIS-compatible outputs · Git/GitHub
+
+## Version
+**v2.0 — Final analysis and portfolio delivery**
+
+Earlier version-specific QA tables and documentation are retained to preserve the audit trail.
