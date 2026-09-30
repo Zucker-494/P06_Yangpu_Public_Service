@@ -7,3 +7,7 @@ Four analytical layers:
 4. Gap & intervention — classify areas by problem type and translate diagnosis into planning actions.
 
 No arbitrary composite ranking is used in the core workflow.
+
+
+## v1.0 implementation decision
+Supply and accessibility are now operationally separated. Authoritative street-level inventory fields may be used for supply indicators even when exact point geometry is unresolved. Network accessibility requires A-grade facility geometry and will not be estimated from street centroids or incomplete candidate sets.

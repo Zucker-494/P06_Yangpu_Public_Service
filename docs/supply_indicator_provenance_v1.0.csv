@@ -1,0 +1,13 @@
+﻿indicator,definition,service,source_basis,unit,analysis_ready
+park_count,facility count,park,authoritative inventory,count,True
+park_per_10k,"facilities per 10,000 residents",park,authoritative inventory + 2020 Census,rate,True
+elderly_care_count,facility count,elderly_care,authoritative inventory,count,True
+elderly_care_per_10k,"facilities per 10,000 residents",elderly_care,authoritative inventory + 2020 Census,rate,True
+healthcare_count,facility count,healthcare,authoritative inventory,count,True
+healthcare_per_10k,"facilities per 10,000 residents",healthcare,authoritative inventory + 2020 Census,rate,True
+culture_count,facility count,culture,authoritative inventory,count,True
+culture_per_10k,"facilities per 10,000 residents",culture,authoritative inventory + 2020 Census,rate,True
+park_area_m2,total registered park area,park,official park inventory,m2,True
+park_area_m2_per_capita,registered park area per resident,park,official park inventory + 2020 Census,m2/person,True
+elderly_care_known_capacity,sum of known actual capacity fields only,elderly_care,official inventory,beds where reported,True
+healthcare_known_capacity,sum of supported licensed-bed capacity fields only,healthcare,official/verified centre records,beds where reported,True

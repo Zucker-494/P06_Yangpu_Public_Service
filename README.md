@@ -1,7 +1,7 @@
 # P06 — Yangpu Public Service Assessment and Spatial Decision Support
 
 ## Status
-P06-05: Data Acquisition & Preparation — v0.9 (conservative facility spatialisation pass)
+P06-05: Data Acquisition & Preparation — v1.0 (first analysis-ready supply layer + strict geometry confidence)
 
 ## Project type
 Independent portfolio project simulating a Chinese GIS/planning horizontal-project workflow.
@@ -48,3 +48,7 @@ The first authoritative facility layer has been acquired: the official Yangpu di
 - `p06_yangpu.gpkg` now contains approved subdistrict boundaries, the census-baseline population polygon layer, and district context geometry.
 
 - Facility spatialisation has begun using reproducible OSM feature matching and subdistrict consistency checks; unresolved official facilities remain unlocated rather than receiving guessed coordinates.
+
+- `analysis_supply` is now implemented for parks, elderly care, healthcare, and culture using authoritative facility inventories and the frozen 2020 Census population baseline.
+- Facility geometry evidence is explicitly classified A/B/C; only A-grade points are eligible for future network accessibility analysis.
+- Sports street-level supply and all accessibility indicators remain deferred rather than being estimated from incomplete coordinates.
