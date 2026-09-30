@@ -1,7 +1,7 @@
 # P06 — Yangpu Public Service Assessment and Spatial Decision Support
 
 ## Status
-P06-05: Data Acquisition & Preparation
+P06-05: Data Acquisition & Preparation — v0.2 (first authoritative facility dataset acquired)
 
 ## Project type
 Independent portfolio project simulating a Chinese GIS/planning horizontal-project workflow.
@@ -20,3 +20,7 @@ Raw data → standardisation → spatial integration → supply analysis → acc
 
 ## Important
 This is a simulated consultancy workflow, not a commissioned project. Official/authoritative data are preferred. Missing client-type datasets remain explicit data requirements rather than being silently replaced by weak proxies.
+
+
+## Data acquisition status
+The first authoritative facility layer has been acquired: the official Yangpu district park register (22 records). Additional official sources for elderly care, healthcare, culture and sports have been identified and are being consolidated before spatial analysis begins.
