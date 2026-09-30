@@ -1,7 +1,7 @@
 # P06 — Yangpu Public Service Assessment and Spatial Decision Support
 
 ## Status
-P06-05: Data Acquisition & Preparation — v1.0 (first analysis-ready supply layer + strict geometry confidence)
+P06-05: Data Acquisition & Preparation — v1.1 (supply diagnostics + formal limitations framework)
 
 ## Project type
 Independent portfolio project simulating a Chinese GIS/planning horizontal-project workflow.
@@ -52,3 +52,8 @@ The first authoritative facility layer has been acquired: the official Yangpu di
 - `analysis_supply` is now implemented for parks, elderly care, healthcare, and culture using authoritative facility inventories and the frozen 2020 Census population baseline.
 - Facility geometry evidence is explicitly classified A/B/C; only A-grade points are eligible for future network accessibility analysis.
 - Sports street-level supply and all accessibility indicators remain deferred rather than being estimated from incomplete coordinates.
+
+- Added a formal limitations/future-work register linking each data constraint to its analytical consequence, mitigation, and upgrade path.
+- Added an indicator interpretation registry so temporal scope, readiness, and inferential limits travel with the analysis.
+- Added transparent district-relative supply diagnostics. Median-based labels are exploratory screening only and are not interpreted as official adequacy standards.
+- Final service-gap classification remains pending accessibility evidence.

@@ -1,0 +1,6 @@
+﻿indicator,threshold,threshold_type,interpretation
+park_per_10k,0.18701358375692825,district median,descriptive screening only; not a service standard or adequacy threshold
+park_area_m2_per_capita,0.5876733965645081,district median,descriptive screening only; not a service standard or adequacy threshold
+elderly_care_per_10k,0.49592239219657797,district median,descriptive screening only; not a service standard or adequacy threshold
+healthcare_per_10k,0.1099161255411255,district median,descriptive screening only; not a service standard or adequacy threshold
+culture_per_10k,0.1099161255411255,district median,descriptive screening only; not a service standard or adequacy threshold

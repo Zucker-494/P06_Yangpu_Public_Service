@@ -1,0 +1,11 @@
+﻿indicator,service,dimension,measure,reference_scope,readiness,interpretation_scope
+park_per_10k,park,supply,facility_rate,2020 census-baseline demand,analysis_ready,Descriptive supply indicator; district-median comparison is not an adequacy standard.
+park_area_m2_per_capita,park,supply,area_rate,2020 census-baseline demand,analysis_ready,Descriptive supply indicator; district-median comparison is not an adequacy standard.
+elderly_care_per_10k,elderly_care,supply,facility_rate,2020 census-baseline demand,analysis_ready,Descriptive supply indicator; district-median comparison is not an adequacy standard.
+healthcare_per_10k,healthcare,supply,facility_rate,2020 census-baseline demand,analysis_ready,Descriptive supply indicator; district-median comparison is not an adequacy standard.
+culture_per_10k,culture,supply,facility_rate,2020 census-baseline demand,analysis_ready,Descriptive supply indicator; district-median comparison is not an adequacy standard.
+population_total,all,demand,resident population,2020 Seventh Census,analysis_ready_with_scope,Street-level demand baseline; do not label as 2024/2025 street population.
+elderly_care_known_capacity,elderly_care,supply,known capacity,mixed verified reference dates,partial,Interpret only as known capacity; missing capacity is not zero.
+healthcare_known_capacity,healthcare,supply,licensed/verified beds,mixed verified reference dates,partial,Interpret only where supported; facility count and bed capacity are distinct constructs.
+sports_per_10k,sports,supply,facility rate,pending street assignment,not_ready,Do not calculate until sports subdistrict assignment is validated.
+network_accessibility,all,accessibility,network service coverage,pending geometry completeness,not_ready,Do not calculate from incomplete facility coordinates or street centroids.
