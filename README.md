@@ -91,3 +91,11 @@ The first authoritative facility layer has been acquired: the official Yangpu di
 - Added facility-to-network snap QA and excluded >60 m connections from service-area calculation.
 - Calculated 5/10/15-minute pedestrian-network coverage by subdistrict for healthcare, elderly care, culture and sports.
 - Explicitly distinguishes network-length coverage from population coverage because only subdistrict-level authoritative population is available.
+
+
+### v1.5 demand–supply gap diagnosis
+- Combined category-specific supply evidence with 15-minute pedestrian-network coverage using a transparent 2×2 diagnostic.
+- Distinguished broadly adequate, spatial-configuration gap, supply/capacity pressure, and combined-gap conditions.
+- Kept parks explicitly accessibility-pending rather than forcing point-based park accessibility.
+- Added the required 12-subdistrict × 5-service diagnostic heatmap and cell-level audit table.
+- Added intervention-type outputs without an arbitrary weighted composite ranking.

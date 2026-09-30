@@ -1,0 +1,7 @@
+﻿check,observed,expected,status
+diagnostic_cells,60,60,PASS
+subdistricts,12,12,PASS
+service_categories,5,5,PASS
+joint_categories,4,4,PASS
+parks_joint_diagnosis,0,0,PASS
+combined_gap_records,16,16,PASS

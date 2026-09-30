@@ -1,0 +1,61 @@
+﻿subdistrict_name,supply_indicator,network_coverage_15min_pct,facility_type,supply_indicator_name,supply_median,accessibility_median,supply_class,accessibility_class,gap_type,intervention_type,heatmap_code,heatmap_label
+殷行街道,0.05479452054794521,29.66547960014904,healthcare,healthcare_per_10k,0.10991612554112554,39.931372051852335,low,low,combined_gap,priority_combined_supply_and_spatial_intervention,2,Combined gap
+定海路街道,0.11160714285714286,37.4074842492397,healthcare,healthcare_per_10k,0.10991612554112554,39.931372051852335,high,low,spatial_configuration_gap,redistribute_or_add_spatial_access_points,1,Spatial gap
+平凉路街道,0.17301038062283738,54.14684018910516,healthcare,healthcare_per_10k,0.10991612554112554,39.931372051852335,high,high,broadly_adequate,maintain_and_monitor,0,Adequate
+大桥街道,0.10482180293501048,35.60587907270498,healthcare,healthcare_per_10k,0.10991612554112554,39.931372051852335,low,low,combined_gap,priority_combined_supply_and_spatial_intervention,2,Combined gap
+四平路街道,0.10822510822510822,42.45525985446497,healthcare,healthcare_per_10k,0.10991612554112554,39.931372051852335,low,high,supply_capacity_pressure,expand_supply_or_capacity,1,Supply pressure
+江浦路街道,0.12135922330097088,77.35284063232622,healthcare,healthcare_per_10k,0.10991612554112554,39.931372051852335,high,high,broadly_adequate,maintain_and_monitor,0,Adequate
+五角场街道,0.0691085003455425,15.38899540492254,healthcare,healthcare_per_10k,0.10991612554112554,39.931372051852335,low,low,combined_gap,priority_combined_supply_and_spatial_intervention,2,Combined gap
+控江路街道,0.09727626459143969,95.37047658106894,healthcare,healthcare_per_10k,0.10991612554112554,39.931372051852335,low,high,supply_capacity_pressure,expand_supply_or_capacity,1,Supply pressure
+长海路街道,0.05991611743559017,22.02006806853154,healthcare,healthcare_per_10k,0.10991612554112554,39.931372051852335,low,low,combined_gap,priority_combined_supply_and_spatial_intervention,2,Combined gap
+长白新村街道,0.13550135501355012,42.8463927569348,healthcare,healthcare_per_10k,0.10991612554112554,39.931372051852335,high,high,broadly_adequate,maintain_and_monitor,0,Adequate
+延吉新村街道,0.11778563015312131,69.72844315743201,healthcare,healthcare_per_10k,0.10991612554112554,39.931372051852335,high,high,broadly_adequate,maintain_and_monitor,0,Adequate
+新江湾城街道,0.1440922190201729,28.05597775798621,healthcare,healthcare_per_10k,0.10991612554112554,39.931372051852335,high,low,spatial_configuration_gap,redistribute_or_add_spatial_access_points,1,Spatial gap
+殷行街道,0.6027397260273972,64.63025341173139,elderly_care,elderly_care_per_10k,0.49592239219657797,83.19787964706771,high,low,spatial_configuration_gap,redistribute_or_add_spatial_access_points,1,Spatial gap
+定海路街道,0.6696428571428572,83.6089826974854,elderly_care,elderly_care_per_10k,0.49592239219657797,83.19787964706771,high,high,broadly_adequate,maintain_and_monitor,0,Adequate
+平凉路街道,0.8650519031141868,88.38572624755885,elderly_care,elderly_care_per_10k,0.49592239219657797,83.19787964706771,high,high,broadly_adequate,maintain_and_monitor,0,Adequate
+大桥街道,0.7337526205450733,91.42234954085622,elderly_care,elderly_care_per_10k,0.49592239219657797,83.19787964706771,high,high,broadly_adequate,maintain_and_monitor,0,Adequate
+四平路街道,0.21645021645021645,82.78677659665003,elderly_care,elderly_care_per_10k,0.49592239219657797,83.19787964706771,low,low,combined_gap,priority_combined_supply_and_spatial_intervention,2,Combined gap
+江浦路街道,0.3640776699029126,83.95470583336026,elderly_care,elderly_care_per_10k,0.49592239219657797,83.19787964706771,low,high,supply_capacity_pressure,expand_supply_or_capacity,1,Supply pressure
+五角场街道,0.34554250172771256,57.32317706616963,elderly_care,elderly_care_per_10k,0.49592239219657797,83.19787964706771,low,low,combined_gap,priority_combined_supply_and_spatial_intervention,2,Combined gap
+控江路街道,0.38910505836575876,90.72069313634344,elderly_care,elderly_care_per_10k,0.49592239219657797,83.19787964706771,low,high,supply_capacity_pressure,expand_supply_or_capacity,1,Supply pressure
+长海路街道,0.35949670461354105,42.19580779018803,elderly_care,elderly_care_per_10k,0.49592239219657797,83.19787964706771,low,low,combined_gap,priority_combined_supply_and_spatial_intervention,2,Combined gap
+长白新村街道,1.084010840108401,81.96175526401626,elderly_care,elderly_care_per_10k,0.49592239219657797,83.19787964706771,high,low,spatial_configuration_gap,redistribute_or_add_spatial_access_points,1,Spatial gap
+延吉新村街道,0.8244994110718492,100.0,elderly_care,elderly_care_per_10k,0.49592239219657797,83.19787964706771,high,high,broadly_adequate,maintain_and_monitor,0,Adequate
+新江湾城街道,0.1440922190201729,41.06069619051303,elderly_care,elderly_care_per_10k,0.49592239219657797,83.19787964706771,low,low,combined_gap,priority_combined_supply_and_spatial_intervention,2,Combined gap
+殷行街道,0.05479452054794521,20.684249817521177,culture,culture_per_10k,0.10991612554112554,29.344294217143386,low,low,combined_gap,priority_combined_supply_and_spatial_intervention,2,Combined gap
+定海路街道,0.11160714285714286,30.4726429919893,culture,culture_per_10k,0.10991612554112554,29.344294217143386,high,high,broadly_adequate,maintain_and_monitor,0,Adequate
+平凉路街道,0.17301038062283738,79.30936651921421,culture,culture_per_10k,0.10991612554112554,29.344294217143386,high,high,broadly_adequate,maintain_and_monitor,0,Adequate
+大桥街道,0.10482180293501048,21.77058782094384,culture,culture_per_10k,0.10991612554112554,29.344294217143386,low,low,combined_gap,priority_combined_supply_and_spatial_intervention,2,Combined gap
+四平路街道,0.10822510822510822,59.87476653041684,culture,culture_per_10k,0.10991612554112554,29.344294217143386,low,high,supply_capacity_pressure,expand_supply_or_capacity,1,Supply pressure
+江浦路街道,0.12135922330097088,84.27308326444052,culture,culture_per_10k,0.10991612554112554,29.344294217143386,high,high,broadly_adequate,maintain_and_monitor,0,Adequate
+五角场街道,0.0691085003455425,0.1400496260372785,culture,culture_per_10k,0.10991612554112554,29.344294217143386,low,low,combined_gap,priority_combined_supply_and_spatial_intervention,2,Combined gap
+控江路街道,0.09727626459143969,86.80863105846119,culture,culture_per_10k,0.10991612554112554,29.344294217143386,low,high,supply_capacity_pressure,expand_supply_or_capacity,1,Supply pressure
+长海路街道,0.05991611743559017,19.34300507763216,culture,culture_per_10k,0.10991612554112554,29.344294217143386,low,low,combined_gap,priority_combined_supply_and_spatial_intervention,2,Combined gap
+长白新村街道,0.13550135501355012,35.47776486442196,culture,culture_per_10k,0.10991612554112554,29.344294217143386,high,high,broadly_adequate,maintain_and_monitor,0,Adequate
+延吉新村街道,0.11778563015312131,28.21594544229747,culture,culture_per_10k,0.10991612554112554,29.344294217143386,high,low,spatial_configuration_gap,redistribute_or_add_spatial_access_points,1,Spatial gap
+新江湾城街道,0.1440922190201729,20.38373390363173,culture,culture_per_10k,0.10991612554112554,29.344294217143386,high,low,spatial_configuration_gap,redistribute_or_add_spatial_access_points,1,Spatial gap
+殷行街道,0.1643835616438356,25.623588534349583,sports,"A-grade sports facilities per 10,000 residents",0.13979678701686152,37.71093882909283,high,low,spatial_configuration_gap,redistribute_or_add_spatial_access_points,1,Spatial gap
+定海路街道,0.22321428571428573,44.103728465403016,sports,"A-grade sports facilities per 10,000 residents",0.13979678701686152,37.71093882909283,high,high,broadly_adequate,maintain_and_monitor,0,Adequate
+平凉路街道,0.17301038062283738,79.30936651921421,sports,"A-grade sports facilities per 10,000 residents",0.13979678701686152,37.71093882909283,high,high,broadly_adequate,maintain_and_monitor,0,Adequate
+大桥街道,0.0,31.31814919278265,sports,"A-grade sports facilities per 10,000 residents",0.13979678701686152,37.71093882909283,low,low,combined_gap,priority_combined_supply_and_spatial_intervention,2,Combined gap
+四平路街道,0.10822510822510822,46.20742241787215,sports,"A-grade sports facilities per 10,000 residents",0.13979678701686152,37.71093882909283,low,high,supply_capacity_pressure,expand_supply_or_capacity,1,Supply pressure
+江浦路街道,0.24271844660194175,94.44693656390264,sports,"A-grade sports facilities per 10,000 residents",0.13979678701686152,37.71093882909283,high,high,broadly_adequate,maintain_and_monitor,0,Adequate
+五角场街道,0.0691085003455425,0.0009632493027123,sports,"A-grade sports facilities per 10,000 residents",0.13979678701686152,37.71093882909283,low,low,combined_gap,priority_combined_supply_and_spatial_intervention,2,Combined gap
+控江路街道,0.09727626459143969,63.16273016860886,sports,"A-grade sports facilities per 10,000 residents",0.13979678701686152,37.71093882909283,low,high,supply_capacity_pressure,expand_supply_or_capacity,1,Supply pressure
+长海路街道,0.11983223487118035,19.310245193686665,sports,"A-grade sports facilities per 10,000 residents",0.13979678701686152,37.71093882909283,low,low,combined_gap,priority_combined_supply_and_spatial_intervention,2,Combined gap
+长白新村街道,0.13550135501355012,7.934243518610983,sports,"A-grade sports facilities per 10,000 residents",0.13979678701686152,37.71093882909283,low,low,combined_gap,priority_combined_supply_and_spatial_intervention,2,Combined gap
+延吉新村街道,0.35335689045936397,97.30297099095868,sports,"A-grade sports facilities per 10,000 residents",0.13979678701686152,37.71093882909283,high,high,broadly_adequate,maintain_and_monitor,0,Adequate
+新江湾城街道,0.1440922190201729,11.717559579607354,sports,"A-grade sports facilities per 10,000 residents",0.13979678701686152,37.71093882909283,high,low,spatial_configuration_gap,redistribute_or_add_spatial_access_points,1,Spatial gap
+殷行街道,7.098082191780822,,park,park_area_m2_per_capita,0.5876733965645081,,high,pending,higher_supply_accessibility_pending,verify_park_entrances_and_accessibility_before_joint_diagnosis,3,Park: access pending
+定海路街道,0.5680803571428571,,park,park_area_m2_per_capita,0.5876733965645081,,low,pending,low_supply_accessibility_pending,verify_park_entrances_and_accessibility_before_joint_diagnosis,3,Park: low supply + access pending
+平凉路街道,0.6072664359861591,,park,park_area_m2_per_capita,0.5876733965645081,,high,pending,higher_supply_accessibility_pending,verify_park_entrances_and_accessibility_before_joint_diagnosis,3,Park: access pending
+大桥街道,0.1752578616352201,,park,park_area_m2_per_capita,0.5876733965645081,,low,pending,low_supply_accessibility_pending,verify_park_entrances_and_accessibility_before_joint_diagnosis,3,Park: low supply + access pending
+四平路街道,0.7045454545454546,,park,park_area_m2_per_capita,0.5876733965645081,,high,pending,higher_supply_accessibility_pending,verify_park_entrances_and_accessibility_before_joint_diagnosis,3,Park: access pending
+江浦路街道,0.4672330097087379,,park,park_area_m2_per_capita,0.5876733965645081,,low,pending,low_supply_accessibility_pending,verify_park_entrances_and_accessibility_before_joint_diagnosis,3,Park: low supply + access pending
+五角场街道,0.0,,park,park_area_m2_per_capita,0.5876733965645081,,low,pending,low_supply_accessibility_pending,verify_park_entrances_and_accessibility_before_joint_diagnosis,3,Park: low supply + access pending
+控江路街道,0.038910505836575876,,park,park_area_m2_per_capita,0.5876733965645081,,low,pending,low_supply_accessibility_pending,verify_park_entrances_and_accessibility_before_joint_diagnosis,3,Park: low supply + access pending
+长海路街道,2.4182144997004196,,park,park_area_m2_per_capita,0.5876733965645081,,high,pending,higher_supply_accessibility_pending,verify_park_entrances_and_accessibility_before_joint_diagnosis,3,Park: access pending
+长白新村街道,0.1951219512195122,,park,park_area_m2_per_capita,0.5876733965645081,,low,pending,low_supply_accessibility_pending,verify_park_entrances_and_accessibility_before_joint_diagnosis,3,Park: low supply + access pending
+延吉新村街道,2.7090694935217905,,park,park_area_m2_per_capita,0.5876733965645081,,high,pending,higher_supply_accessibility_pending,verify_park_entrances_and_accessibility_before_joint_diagnosis,3,Park: access pending
+新江湾城街道,4.577341498559078,,park,park_area_m2_per_capita,0.5876733965645081,,high,pending,higher_supply_accessibility_pending,verify_park_entrances_and_accessibility_before_joint_diagnosis,3,Park: access pending
