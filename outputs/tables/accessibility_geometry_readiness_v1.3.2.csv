@@ -1,0 +1,6 @@
+﻿facility_type,official_total,api_success,within_yangpu,A,B,C,A_coverage_pct,gate_80_status
+culture,12,8,8,7,1,4,58.333333333333336,not_ready
+elderly_care,65,65,65,46,18,1,70.76923076923077,not_ready
+healthcare,12,12,12,12,0,0,100.0,ready
+park,22,22,22,16,0,6,72.72727272727273,not_ready
+sports,20,20,20,16,3,1,80.0,ready

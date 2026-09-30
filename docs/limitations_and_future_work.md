@@ -38,3 +38,7 @@ A pedestrian-network candidate has been extracted from the 2026-09-29 OSM PBF sn
 
 ## v1.3.1 topology note
 The v1.3 endpoint-only graph substantially under-connected the pedestrian network because source line intersections were not necessarily represented as line endpoints. v1.3.1 applies planar noding to recover geometric junctions. This fixes the dominant under-connection problem, but introduces a smaller opposite risk: grade-separated bridge/tunnel crossings may be connected geometrically if vertical/topological OSM tags are not preserved through noding. Final routing should therefore retain or reconstruct OSM grade-separation semantics where material.
+
+
+## v1.3.2 geocoding provenance
+Facility point geometry is derived from authoritative inventory addresses using Baidu geocoding rather than from an authoritative coordinate register. Coordinates are therefore treated as derived spatial data. The original address remains the source-of-record attribute, and geocoder precision/confidence plus independent district/subdistrict spatial checks are retained for QA. BD-09 coordinates are transformed to WGS84 for integration with the project database; transformation itself introduces small positional uncertainty that is immaterial for subdistrict assignment but should not be interpreted as survey-grade positioning.

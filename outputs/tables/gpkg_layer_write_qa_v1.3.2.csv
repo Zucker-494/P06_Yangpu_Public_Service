@@ -1,0 +1,4 @@
+﻿check,observed,expected,status
+geocoded_points_written,127,127,PASS
+A_grade_points_written,97,97,PASS
+A_layer_geometry_nonnull,97,97,PASS

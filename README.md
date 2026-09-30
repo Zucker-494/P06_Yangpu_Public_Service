@@ -1,7 +1,7 @@
 # P06 — Yangpu Public Service Assessment and Spatial Decision Support
 
 ## Status
-P06-05: Data Acquisition & Preparation — v1.3.1 (pedestrian topology repair)
+P06-05: Data Acquisition & Preparation — v1.3.2 (facility geocoding and spatial QA)
 
 ## Project type
 Independent portfolio project simulating a Chinese GIS/planning horizontal-project workflow.
@@ -72,3 +72,7 @@ The first authoritative facility layer has been acquired: the official Yangpu di
 - Added full noded and largest-component routing-core layers.
 - Connectivity QA now evaluates both node share and network-length share.
 - Planar noding's potential to over-connect grade-separated crossings is explicitly retained as a routing limitation.
+
+- Added address-based facility geocoding candidates from Baidu Web Service without storing the API key.
+- Converted BD-09 results to WGS84 and checked Yangpu containment, subdistrict consistency, precision, confidence, result level, and coordinate clustering.
+- Created an auditable A/B/C geometry-confidence layer and category-level accessibility-readiness table.
