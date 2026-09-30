@@ -1,7 +1,5 @@
-﻿file,analytical_role,evidence
-outputs/maps/01_supply_pattern.png,Supply pattern,Park area per resident + validated elderly-care locations
-outputs/maps/02_healthcare_accessibility.png,Network accessibility,Healthcare 15-minute network coverage + centre locations
-outputs/maps/03_combined_gap_burden.png,Demand–supply mismatch,Discrete count of combined-gap service categories
-outputs/maps/04_intervention_diagnostic.png,Intervention diagnosis,Dominant diagnostic class with ties preserved
-outputs/charts/01_service_gap_diagnostic_matrix.png,Gap diagnostic matrix,12 subdistricts × 4 joint-diagnosis services + visually separated park supply-only context
-outputs/charts/02_accessibility_profile.png,Accessibility profile,Median 5/10/15-minute network coverage
+﻿file,analytical_role,question_answered
+outputs/maps/01_elderly_care_supply.png,Supply evidence,Where is relative elderly-care service supply higher or lower?
+outputs/maps/02_healthcare_accessibility.png,Network accessibility,How does spatial reach differ even when each subdistrict has a principal health centre?
+outputs/charts/01_service_gap_diagnostic_matrix.png,Service-specific gap diagnosis,What type of supply/accessibility problem occurs for each subdistrict and service?
+outputs/charts/02_accessibility_profile.png,Cross-service accessibility comparison,How quickly does network coverage expand from 5 to 15 minutes across service categories?

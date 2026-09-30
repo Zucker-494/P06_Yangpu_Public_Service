@@ -69,21 +69,17 @@ Healthcare and culture require particular interpretive care: the authoritative c
 
 ## Final outputs
 
+The final public visual set is deliberately limited to four non-duplicative figures. Each figure answers a different analytical question.
+
 ### Maps
-1. `outputs/maps/01_supply_pattern.png` — supply pattern
-2. `outputs/maps/02_healthcare_accessibility.png` — 15-minute healthcare network accessibility
-3. `outputs/maps/03_combined_gap_burden.png` — multi-service combined-gap burden
-4. `outputs/maps/04_intervention_diagnostic.png` — dominant intervention diagnostic
+1. `outputs/maps/01_elderly_care_supply.png` — relative elderly-care supply by subdistrict.
+2. `outputs/maps/02_healthcare_accessibility.png` — 15-minute healthcare pedestrian-network coverage.
 
 ### Charts
-- `outputs/charts/01_service_gap_diagnostic_matrix.png` — 12 × 4 joint service-gap diagnostic matrix, with park supply shown separately as contextual evidence
-- `outputs/charts/02_accessibility_profile.png` — service-category accessibility profiles
+3. `outputs/charts/01_service_gap_diagnostic_matrix.png` — service-specific 2×2 supply–accessibility diagnosis for healthcare, elderly care, culture and sports, with park supply shown separately as contextual evidence.
+4. `outputs/charts/02_accessibility_profile.png` — median 5/10/15-minute network-coverage profiles across the four analysis-ready service categories.
 
-### Core audit tables
-- `outputs/tables/service_gap_diagnosis_v1.5.csv`
-- `outputs/tables/network_accessibility_by_subdistrict_v1.4.csv`
-- `outputs/tables/facility_geometry_qa_v1.3.3.csv`
-- `outputs/tables/combined_gap_burden_v1.5.csv`
+No preliminary, superseded or duplicated figures are retained in the public final output directories. Final figures use separated plot and legend panels to avoid layout collisions.
 
 ## Spatial database
 `p06_yangpu.gpkg` contains the project’s principal source, QA and analytical layers, including:
