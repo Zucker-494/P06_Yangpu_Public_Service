@@ -76,8 +76,8 @@ Healthcare and culture require particular interpretive care: the authoritative c
 4. `outputs/maps/04_intervention_diagnostic.png` — dominant intervention diagnostic
 
 ### Charts
-- `outputs/charts/service_gap_heatmap_final.png` — required 12 × 5 Neighborhood × Service Gap diagnostic matrix
-- `outputs/charts/accessibility_profile_final.png` — service-category accessibility profiles
+- `outputs/charts/01_service_gap_diagnostic_matrix.png` — 12 × 4 joint service-gap diagnostic matrix, with park supply shown separately as contextual evidence
+- `outputs/charts/02_accessibility_profile.png` — service-category accessibility profiles
 
 ### Core audit tables
 - `outputs/tables/service_gap_diagnosis_v1.5.csv`
@@ -133,6 +133,6 @@ See `docs/` for the detailed methodology, limitations, engineering backlog, visu
 Python · GeoPandas · pandas · NetworkX · Shapely · GeoPackage · QGIS-compatible outputs · Git/GitHub
 
 ## Version
-**v2.0 — Final analysis and portfolio delivery**
+**v2.0 — Final analysis and portfolio delivery (cartography QA revised)**
 
 Earlier version-specific QA tables and documentation are retained to preserve the audit trail.

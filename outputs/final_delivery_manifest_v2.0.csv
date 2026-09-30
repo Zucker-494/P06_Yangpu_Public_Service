@@ -1,7 +1,7 @@
-﻿file,analytical_role,evidence,format
-01_supply_pattern.png,Supply pattern,park area per resident + elderly-care points,map
-02_healthcare_accessibility.png,Network accessibility,healthcare 15-min network coverage,map
-03_combined_gap_burden.png,Demand–supply mismatch,combined-gap category count,map
-04_intervention_diagnostic.png,Intervention diagnosis,modal 2x2 diagnosis,map
-service_gap_heatmap_final.png,Gap diagnostic matrix,12 subdistricts × 5 services,chart
-accessibility_profile_final.png,Accessibility profile,median 5/10/15-min network coverage,chart
+﻿file,analytical_role,evidence
+outputs/maps/01_supply_pattern.png,Supply pattern,Park area per resident + validated elderly-care locations
+outputs/maps/02_healthcare_accessibility.png,Network accessibility,Healthcare 15-minute network coverage + centre locations
+outputs/maps/03_combined_gap_burden.png,Demand–supply mismatch,Discrete count of combined-gap service categories
+outputs/maps/04_intervention_diagnostic.png,Intervention diagnosis,Dominant diagnostic class with ties preserved
+outputs/charts/01_service_gap_diagnostic_matrix.png,Gap diagnostic matrix,12 subdistricts × 4 joint-diagnosis services + visually separated park supply-only context
+outputs/charts/02_accessibility_profile.png,Accessibility profile,Median 5/10/15-minute network coverage
