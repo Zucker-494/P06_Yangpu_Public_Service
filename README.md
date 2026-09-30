@@ -1,7 +1,7 @@
 # P06 — Yangpu Public Service Assessment and Spatial Decision Support
 
 ## Status
-P06-05: Data Acquisition & Preparation — v1.2 (spatial evidence selection + pre-cartographic supply diagnosis)
+P06-05: Data Acquisition & Preparation — v1.3 (pedestrian network + accessibility readiness gate)
 
 ## Project type
 Independent portfolio project simulating a Chinese GIS/planning horizontal-project workflow.
@@ -62,3 +62,8 @@ The first authoritative facility layer has been acquired: the official Yangpu di
 - Selected park area per resident and elderly-care facilities per 10,000 residents as primary supply-map candidates.
 - Kept healthcare and culture rates as supporting evidence because their variation is dominated by the one-centre-per-subdistrict structure.
 - Added a preliminary contrast chart and a formal visual-evidence selection registry.
+
+- Extracted a Yangpu pedestrian-network candidate from the 2026-09-29 OSM PBF with a 1 km boundary buffer.
+- Added network QA and explicit pedestrian filtering rules.
+- Added a conservative 80% A-grade facility-geometry gate for category-wide accessibility modelling.
+- Accessibility remains intentionally deferred because facility-location completeness, rather than network availability, is currently the binding constraint.

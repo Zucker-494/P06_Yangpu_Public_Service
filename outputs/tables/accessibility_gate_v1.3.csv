@@ -1,0 +1,6 @@
+﻿facility_type,A,B,C,total,A_coverage_pct,required_A_coverage_pct,accessibility_status
+culture,0,0,12,12,0.0,80.0,not_ready
+elderly_care,0,5,60,65,0.0,80.0,not_ready
+healthcare,1,4,7,12,8.333333333333332,80.0,not_ready
+park,1,11,10,22,4.545454545454546,80.0,not_ready
+sports,0,1,19,20,0.0,80.0,not_ready

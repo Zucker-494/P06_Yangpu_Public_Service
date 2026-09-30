@@ -1,0 +1,8 @@
+﻿metric,value,unit,status
+walkable_line_features,7308.0,count,INFO
+network_total_length_km,1221.4627172105008,km,INFO
+graph_nodes,9844.0,count,INFO
+graph_edges,7185.0,count,INFO
+connected_components,3214.0,count,REVIEW
+largest_component_node_share,0.18082080455099553,proportion,REVIEW
+routing_buffer_m,1000.0,m,INFO

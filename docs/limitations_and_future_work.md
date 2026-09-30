@@ -30,3 +30,7 @@ The architecture is intentionally designed so that improved datasets can replace
 
 ## v1.2 status note
 The first visual-evidence audit confirmed that not every available supply indicator should be mapped. Healthcare and culture rates are strongly shaped by the one-centre-per-subdistrict institutional structure, while park area per resident and elderly-care facility density contain more substantive between-subdistrict supply variation. Sports remains excluded from street-level diagnostics until location-based assignment is sufficiently verified.
+
+
+## v1.3 network status
+A pedestrian-network candidate has been extracted from the 2026-09-29 OSM PBF snapshot with a 1 km routing buffer. Network QA is now implemented. However, facility geometry—not network availability—is the principal constraint on category-wide accessibility analysis. An explicit 80% A-grade geometry gate is used internally to prevent incomplete facility sets from producing misleading service-area results.
