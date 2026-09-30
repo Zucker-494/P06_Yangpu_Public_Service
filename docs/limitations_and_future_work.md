@@ -26,3 +26,7 @@ Future operational implementation:
 **official GIS + finer population + complete facility coordinates + harmonised capacity + observed utilisation → fine-scale accessibility → target-group demand → capacity-sensitive gap diagnosis → site/capacity/resource intervention**
 
 The architecture is intentionally designed so that improved datasets can replace weaker inputs without changing the overall analytical logic.
+
+
+## v1.2 status note
+The first visual-evidence audit confirmed that not every available supply indicator should be mapped. Healthcare and culture rates are strongly shaped by the one-centre-per-subdistrict institutional structure, while park area per resident and elderly-care facility density contain more substantive between-subdistrict supply variation. Sports remains excluded from street-level diagnostics until location-based assignment is sufficiently verified.

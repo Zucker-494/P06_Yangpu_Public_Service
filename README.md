@@ -1,7 +1,7 @@
 # P06 — Yangpu Public Service Assessment and Spatial Decision Support
 
 ## Status
-P06-05: Data Acquisition & Preparation — v1.1 (supply diagnostics + formal limitations framework)
+P06-05: Data Acquisition & Preparation — v1.2 (spatial evidence selection + pre-cartographic supply diagnosis)
 
 ## Project type
 Independent portfolio project simulating a Chinese GIS/planning horizontal-project workflow.
@@ -57,3 +57,8 @@ The first authoritative facility layer has been acquired: the official Yangpu di
 - Added an indicator interpretation registry so temporal scope, readiness, and inferential limits travel with the analysis.
 - Added transparent district-relative supply diagnostics. Median-based labels are exploratory screening only and are not interpreted as official adequacy standards.
 - Final service-gap classification remains pending accessibility evidence.
+
+- Audited which supply indicators genuinely warrant maps versus charts/tables.
+- Selected park area per resident and elderly-care facilities per 10,000 residents as primary supply-map candidates.
+- Kept healthcare and culture rates as supporting evidence because their variation is dominated by the one-centre-per-subdistrict structure.
+- Added a preliminary contrast chart and a formal visual-evidence selection registry.

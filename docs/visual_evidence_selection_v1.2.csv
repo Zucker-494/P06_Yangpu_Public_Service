@@ -1,0 +1,10 @@
+﻿indicator,recommended_display_role,reason
+population_total,context_map,Demand context; needed to interpret population-standardised supply.
+park_per_10k,supporting_chart,Count-based park provision; useful but incomplete without park area.
+park_area_m2_per_capita,primary_map,Captures magnitude of registered green-space provision better than park count alone.
+elderly_care_per_10k,primary_map,Meaningful variation in facility provision relative to resident population.
+healthcare_per_10k,supporting_chart,All 12 streets have one CHSC; variation is driven mainly by population denominator.
+culture_per_10k,supporting_chart,All 12 streets have one community cultural centre; variation is driven mainly by population denominator.
+elderly_care_known_capacity,deferred_or_secondary,Capacity completeness/temporal consistency is insufficient for primary mapping.
+healthcare_known_capacity,deferred_or_secondary,Capacity is partial and should not replace facility-access evidence.
+sports_per_10k,pending,Requires validated street assignment first.
