@@ -33,3 +33,12 @@ The original subdistrict label is retained in `subdistrict_raw`. A separate `sub
 - Capacity is explicitly stored as `planned_2025`; it is not treated as observed/licensed 2024 capacity.
 - Exact-name matching is used for the first reconciliation pass. Fuzzy/manual matching is deferred to avoid false entity matches.
 - Planning documents report 61 institutional facilities and 11,110 planned beds by 2025; this planning universe is not assumed to be identical to the 65-record 2024 operating/service inventory.
+
+
+## v0.4 — Primary healthcare core layer
+- Added all 12 Yangpu community health service centres as the high-confidence core healthcare layer.
+- Centre and station tiers are explicitly separated; downstream accessibility analysis must not count them as equivalent facility units.
+- Official Yangpu sources confirm a district-wide `12 + 66` primary-care network (12 centres and 66 service stations).
+- The 66-station secondary layer is not yet populated because a complete, same-period official station-name/address inventory has not been consolidated.
+- Licensed bed capacity is populated only where a specific official source supports it; capacity reference dates are retained because values are not all from the same year.
+- No coordinates have been fabricated from postal addresses. Geocoding remains a separate auditable step.

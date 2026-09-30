@@ -2,7 +2,7 @@
 parks,Yangpu District Landscaping and City Appearance Administration,official district list,2021-09-29,acquired,22 records; area/type/subdistrict/address available
 elderly_care,Yangpu District Civil Affairs Bureau,official institution list,2024-09-30,source identified,institution/address/subdistrict available; capacity to be reconciled with statistical yearbook/planning source
 elderly_care_capacity,Yangpu Statistical Yearbook / elderly-care planning,official statistical/planning data,latest available,source identified,bed count/building area available for at least part of institutional inventory; requires entity reconciliation
-healthcare,Yangpu District Government / Health Commission,official service pages,latest available,source identified,community health centres and service stations; inventory still to be consolidated
+healthcare,Yangpu District Government / Health Commission,official service pages,latest available,core layer acquired,12 community health service centres consolidated; 66-station network confirmed but station-level inventory deferred until complete same-period official list is reconciled.
 culture,Yangpu District Government / culture authorities,official service/activity-centre pages,latest available,source identified,12 subdistrict cultural centres evidenced; addresses to be consolidated
 sports,Yangpu District Sports Bureau,official public-opening information,2024-2025,source identified,"public venues, civic fitness centres and courts; full stable inventory still to be consolidated"
 population,Yangpu Statistical Yearbook / authoritative statistical source,official statistics,latest available,pending exact dataset,must use authoritative resident population; migrant population is not a substitute

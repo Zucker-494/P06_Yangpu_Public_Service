@@ -16,3 +16,10 @@ resident population.
 `source`, `source_date`, `capacity`, `capacity_unit`, `geometry`
 
 Unknown capacity remains null; it is not imputed without a defensible source.
+
+
+## Healthcare-specific fields
+- `subtype`: distinguishes `community_health_service_centre` from future `community_health_service_station`.
+- `capacity`: licensed bed count only when explicitly supported by an official source.
+- `capacity_reference_date`: date/year attached to the capacity observation.
+- Centre and station records must not be treated as interchangeable units in supply counts.

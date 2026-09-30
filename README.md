@@ -1,7 +1,7 @@
 # P06 — Yangpu Public Service Assessment and Spatial Decision Support
 
 ## Status
-P06-05: Data Acquisition & Preparation — v0.3 (parks + authoritative elderly-care inventory)
+P06-05: Data Acquisition & Preparation — v0.4 (parks + elderly care + primary healthcare core layer)
 
 ## Project type
 Independent portfolio project simulating a Chinese GIS/planning horizontal-project workflow.
@@ -26,3 +26,6 @@ This is a simulated consultancy workflow, not a commissioned project. Official/a
 The first authoritative facility layer has been acquired: the official Yangpu district park register (22 records). Additional official sources for elderly care, healthcare, culture and sports have been identified and are being consolidated before spatial analysis begins.
 
 - Elderly-care layer: 65 official 2024 institution/service-home records added; planning capacity is maintained as a separate, typed source.
+
+- Healthcare core layer: all 12 community health service centres consolidated from official Yangpu sources.
+- The officially confirmed 66 service stations are retained as a separate pending secondary layer to avoid mixing facility tiers or inconsistent source years.
