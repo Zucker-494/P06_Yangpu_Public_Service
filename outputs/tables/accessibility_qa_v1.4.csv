@@ -1,0 +1,4 @@
+﻿check,observed,expected,status
+edge_snap_facilities,118,118,PASS
+snap_within_60m,103,reported,PASS
+analysis_subdistricts,12,12,PASS

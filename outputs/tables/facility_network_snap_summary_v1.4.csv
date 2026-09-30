@@ -1,0 +1,6 @@
+﻿facility_type,good,poor,review,total,within_60m_pct
+culture,8,1,1,10,90.0
+elderly_care,45,9,7,61,85.2
+healthcare,10,0,2,12,100.0
+park,11,1,5,17,94.1
+sports,11,4,3,18,77.8

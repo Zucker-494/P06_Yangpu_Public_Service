@@ -84,3 +84,10 @@ The first authoritative facility layer has been acquired: the official Yangpu di
 - Added independent named-OSM corroboration for three facilities.
 - Enriched four previously missing community-culture addresses from Yangpu Government sources.
 - Rebuilt the accessibility-ready facility layer from the audited hybrid-evidence rule.
+
+
+### v1.4 network accessibility
+- Connected validated facilities to the pedestrian routing core using nearest-edge projection rather than nearest-node snapping.
+- Added facility-to-network snap QA and excluded >60 m connections from service-area calculation.
+- Calculated 5/10/15-minute pedestrian-network coverage by subdistrict for healthcare, elderly care, culture and sports.
+- Explicitly distinguishes network-length coverage from population coverage because only subdistrict-level authoritative population is available.
