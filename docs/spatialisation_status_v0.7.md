@@ -16,3 +16,9 @@
 
 ## Next execution gate
 Acquire candidate polygon geometry → reconcile 12 names → geometry/topology/area QA → approve `boundary_subdistrict` → geocode/validate facility locations → build GeoPackage.
+
+## v0.8 update
+The user supplied the Geofabrik Shanghai free GeoPackage snapshot dated 2026-09-28.
+The 12 current Yangpu subdistrict polygons were successfully extracted from the administrative-area layer and passed geometry/topology/district-union QA.
+The approved operational boundary is now stored in `data/processed/boundary_subdistrict.gpkg` and `p06_yangpu.gpkg`.
+The project GeoPackage also contains a population-subdistrict polygon layer joined to the frozen 2020 Census demand baseline.

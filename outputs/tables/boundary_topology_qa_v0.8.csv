@@ -1,0 +1,10 @@
+﻿test,value,unit,status
+subdistrict_polygon_count,12,count,PASS
+unique_subdistrict_names,12,count,PASS
+all_geometries_valid,True,boolean,PASS
+sum_subdistrict_area_km2,60.507919636687646,km2,INFO
+union_subdistrict_area_km2,60.50791963668766,km2,INFO
+yangpu_district_osm_area_km2,60.50791963668763,km2,INFO
+internal_overlap_km2,-1.4901161193847656e-14,km2,PASS
+union_outside_district_km2,0.0,km2,PASS
+district_uncovered_km2,0.0,km2,PASS

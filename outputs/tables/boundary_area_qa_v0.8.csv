@@ -1,0 +1,13 @@
+﻿subdistrict_id,subdistrict_name,geometry_area_km2,reference_area_km2,reference_year,source,qa_role,area_difference_km2,area_difference_pct,qa_flag
+310110016,殷行街道,9.61294889181667,9.52,2020,Yangpu Statistical Yearbook 2021 / district planning-natural-resources data,historical_complete_reference,0.0929488918166701,0.976353905637291,within_5pct
+310110001,定海路街道,6.204378688251686,6.25,2020,Yangpu Statistical Yearbook 2021 / district planning-natural-resources data,historical_complete_reference,-0.045621311748313964,-0.7299409879730234,within_5pct
+310110006,平凉路街道,3.1832910949873527,3.22,2020,Yangpu Statistical Yearbook 2021 / district planning-natural-resources data,historical_complete_reference,-0.03670890501264745,-1.14002810598284,within_5pct
+310110018,大桥街道,4.375492798811571,3.99,2024,Yangpu District Government - Daqiao subdistrict profile,current_verified_override,0.38549279881157084,9.661473654425334,review
+310110009,四平路街道,2.6433414751924085,2.64,2020,Yangpu Statistical Yearbook 2021 / district planning-natural-resources data,historical_complete_reference,0.0033414751924083497,0.12657103001546777,within_5pct
+310110008,江浦路街道,2.3148619800208974,2.31,2020,Yangpu Statistical Yearbook 2021 / district planning-natural-resources data,historical_complete_reference,0.004861980020897327,0.21047532557997087,within_5pct
+310110019,五角场街道,7.405454601162237,7.44,2020,Yangpu Statistical Yearbook 2021 / district planning-natural-resources data,historical_complete_reference,-0.03454539883776331,-0.4643198768516574,within_5pct
+310110012,控江路街道,2.1341347629664367,2.15,2025,Yangpu District Government - Kongjiang subdistrict profile,current_verified_override,-0.01586523703356324,-0.7379180015610809,within_5pct
+310110021,长海路街道,8.874518830095424,8.99,2020,Yangpu Statistical Yearbook 2021 / district planning-natural-resources data,historical_complete_reference_needs_current_reconciliation,-0.11548116990457657,-1.2845513893723757,within_5pct
+310110013,长白新村街道,3.0358365697246583,3.04,2020,Yangpu Statistical Yearbook 2021 / district planning-natural-resources data,historical_complete_reference,-0.004163430275341717,-0.13695494326781965,within_5pct
+310110015,延吉新村街道,1.9593100940963104,1.96,2020,Yangpu Statistical Yearbook 2021 / district planning-natural-resources data,historical_complete_reference,-0.0006899059036895583,-0.03519928080048767,within_5pct
+310110020,新江湾城街道,8.76434984956199,8.69,2020,Yangpu Statistical Yearbook 2021 / district planning-natural-resources data,historical_complete_reference,0.07434984956199031,0.8555793965706595,within_5pct

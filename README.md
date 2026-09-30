@@ -1,7 +1,7 @@
 # P06 — Yangpu Public Service Assessment and Spatial Decision Support
 
 ## Status
-P06-05: Data Acquisition & Preparation — v0.7 (spatialisation pipeline and boundary QA implemented)
+P06-05: Data Acquisition & Preparation — v0.8 (approved subdistrict geometry + project GeoPackage)
 
 ## Project type
 Independent portfolio project simulating a Chinese GIS/planning horizontal-project workflow.
@@ -42,3 +42,7 @@ The first authoritative facility layer has been acquired: the official Yangpu di
 - Spatialisation pipeline now separates authoritative administrative semantics from operational geometry provenance.
 - Added time-aware official area QA references and fail-loud boundary acquisition/QA scripts.
 - No polygon or GeoPackage is falsely claimed as complete: spatial database construction is gated by boundary QA.
+
+- Operational geometry: all 12 current Yangpu subdistrict polygons extracted from the 2026-09-28 Geofabrik Shanghai OSM snapshot.
+- Boundary topology and district-union QA passed.
+- `p06_yangpu.gpkg` now contains approved subdistrict boundaries, the census-baseline population polygon layer, and district context geometry.
